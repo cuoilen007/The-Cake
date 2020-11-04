@@ -1,7 +1,8 @@
-.item{
-    padding-top: 50px;
+h3{
+    color: seashell;
+    font-size: 15px;
+    text-align: center;
 }
-
 li ul{
     display: inline-block;
     list-style: none;
@@ -9,212 +10,24 @@ li ul{
 a:hover{
     color: #adadad;
 }
-.menu{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-.menu ul li{
-    display: inline-block;
-    padding: 10px 20px;
-}
-.se{
-    background-color: seashell;
-}
-#hinhnen{
-    width: 100%;
-    height: 100%;
-}
-.hinh{
-    text-align: center;
-    top: 600px;
-}
-.slice{
-    margin-top: -25px;
-    position: relative;
-    height: 650px;
-}
-.slice .fon{
-    position: absolute;
-    top: 280px;
-}
-.fon{
-    left: 550px;
-}
-#p1{
-    font-size: 40px;
-}
-#p2{
-    font-size: 20px;
-}
-#p3{
-    text-align: center;
-    margin-top: 100px;
-}
-#dv{
-    width: 400px;
-    text-align: center;
-    margin: auto;
-    color: #FFFFFF;
-}
-.story h3{
-    font-size: 30px;
-}
-#section{
-    width: 400px;
-    height: 350px;
-}
-.sto{
-    background-color: royalblue;
-    height: 400px;
-}
-#img1 #img2 #img3 #img4{
-    height: 100%;
-    width: 100px;
-}
-.c{
-  
-}
-
-.card {
-    cursor: pointer
-}
-
-.hd {
-    font-size: 25px;
-    text-align: center;
-    
-}
-
-.hdr {
-    font-size: 25px;
-    color: darkblue;
-    text-align: center;
-}
-.card:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
-}
-.cakes{
-    background-image: url(./54120289-handsome-baker-in-uniform-holding-tray-full-of-freshly-baked-croissants-at-the-manufacturing.jpg);
-    height: 600px;
-    width: 100%;
-    padding-bottom: 200px;
-}
-
-.img {
-    margin-bottom: 35px;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222)
-}
-
-.card-title {
-    font-weight: 600
-}
-
 button.focus,
 button:focus {
     outline: 0;
     box-shadow: none !important
 }
 
-.ft {
-    margin-top: 25px
-}
 
-.chk {
-    margin-bottom: 5px
-}
-.vision{
-    text-align: center;
-    color: midnightblue;
-}
-.bnt:hover{
-    background-color: coral;
-}
-.bnt, .bnt1{
-    background-color: teal;
-    padding: 15px 40px;
-    border-radius: 50px;
-    border: none;
-    margin-left:  500px;
-    text-align: center;
-}
-.rck {
-    margin-top: 20px;
-    padding-bottom: 15px
-}
-#section{
-    height: 300px;
-    width: auto;
-    left: 100px;
-    border: none;
-    margin-left: 100px;
-    margin-top: 40px;
-}
-.footer-bs {
-    background-color: darkblue;
-	padding: 60px 40px;
-	color: rgba(255,255,255,1.00);
-	margin-bottom: 20px;
-	border-bottom-right-radius: 6px;
-	border-top-left-radius: 0px;
-    border-bottom-left-radius: 6px;
-    text-decoration: none;
-}
-
-.icon3{
-    height: 7px;
-    width: 7px;
-}
-#icon{
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 120px;
-}
-.db{
-    background-image: url(./backgroun-dich-vu.jpg);
-    height: auto;
-    width: auto;
-    
-}
-.imgdb{
-    width: 150px;
-    height: 150px;
-    margin-left: 50px;
-}
-.navbar{
-    background-color: rgba(82,64,102,0.8);
-}
-.story{
-    height: 400px;
-}
-.rowdb{
-    padding-top: 100px;
-    margin-top: 50px;
-    
-}
-.rowdb1{
-    padding-bottom: 20px;
-}
-h3{
-    color: seashell;
-    font-size: 15px;
-    text-align: center;
-}
-.footer-li,ul{
-    list-style: none;
-}
 /*menu*/
 .prod-menu .row {
     font-family: 'Montserrat';
     min-height: 60px;
-    padding-top: 50px;
 }
 
 .prod-banner {
-    background: url(./banner-home.jpg);
-    min-height: 600px;
+    background: url("../images/banner-home.jpg") no-repeat fixed top;
+    min-height: 500px;
     font-family: 'Montserrat';
-
+    background-size: contain;
 }
 
 .prod-banner-item,
@@ -244,41 +57,379 @@ h3{
 .prod-banner-title {
     font-size: 72px;
 }
+
 .prod-banner-desc {
     font-size: 36px;
 }
-/*agd*/
 
-    .carousel { 
-    margin-bottom: 0;   
-    padding: 0 40px 30px 40px;
+.prod-item {
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.prod-item-img {
+    display: inline-block;
+}
+
+.prod-item-desc {
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 30%;
+    display: none;
+}
+
+#prod_type {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.prod-type-item {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border: 1px #13255E solid;
+    height: 40px;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 25px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.prod-type-item:hover,
+.prod-type-item.selected {
+    background-color: #13255E;
+    color: white;
+    cursor: pointer;
+}
+
+/*our suggesstion*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
     }
-     
-    .carousel-control { 
-    left: -12px;    
-    height: 40px;   
-    width: 40px;    
-    background: none repeat scroll 0 0 #222222; 
-    border: 4px solid #FFFFFF;  
-    border-radius: 23px 23px 23px 23px; 
-    margin-top: 90px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
     }
-     
-    .carousel-control.right {   
-    right: -12px;
+}
+
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
     }
-     
-    .carousel-indicators {  
-    right: 50%; top: auto;  
-    bottom: -10px;  margin-right: -19px;
+    /* show 2 items */
+    .carousel-inner .active+.carousel-item {
+        display: block;
     }
-    /* The colour of the indicators */
-    .carousel-indicators li {   
-    background: #cecece;
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+        transition: none;
     }
-    .carousel-indicators .active {  
-    background: #428bca;
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
     }
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
 
 
+/* MD */
+
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active+.carousel-item+.carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+/* LG */
+
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+#prod_slider{
+    background-image: url(../images/source/background-san-pham.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.prod_slider_suggestion {
+    text-align: center;
+    color: #13255E;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    padding-top: 35px;
+    padding-bottom: 16px;
+    border-bottom: 1px #13255E solid;
+}
+.prod-item-des{
+    text-align: center;
+    color: #13255E;
+    font-size: 20px;
+    font-weight: 500;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  height: 100px;
+  width: 70px;
+  background-size: 80%, 80%;
+  border-radius: 50%;
+  border: 2px solid #13255E;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #13255E;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #13255E;;
+}
+.prod-slider-button{
+    margin-right: -110px;
+    margin-left: -110px;
+}
+.button{
+    background-color: #13255E;
+}
+.pagination a{
+    color: #13255E;
+}
+.pagination a:hover{
+    background-color: #13255E;
+    color: white;
+}
+.pagination a.active{
+    background-color: #13255E;
+    color: white;
+}
+
+/*The cake story*/
+.story{
+    height: 400px;
+}
+.story h3{
+    font-size: 30px;
+}
+#p3{
+    text-align: center;
+    margin-top: 100px;
+}
+#dv{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    color: #FFFFFF;
+}
+.sto{
+    background-color: #13255E;
+    height: 400px;
+}
+.bnt:hover{
+    background-color: coral;
+}
+.bnt, .bnt1{
+    background-color: teal;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    margin-left:  500px;
+    text-align: center;
+}
+#section{
+    width: 400px;
+    height: 350px;
+    height: 300px;
+    width: auto;
+    left: 100px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+
+/*our service*/
+.hd{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.db{
+    background: url(../images/source/backgroun-dich-vu.jpg) no-repeat fixed top;
+}
+.rowdb{
+    padding-top: 100px;
+    margin-top: 50px;
+    
+}
+.rowdb1{
+    padding-bottom: 20px;
+}
+.imgdb{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+.item{
+    padding-top: 50px;
+}
+.card {
+    cursor: pointer
+}
+#img1 #img2 #img3 #img4{
+    height: 100%;
+    width: 100px;
+}
+.icon3{
+    height: 7px;
+    width: 7px;
+}
+#icon{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 120px;
+}
+.img {
+    margin-bottom: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.card {
+    cursor: pointer
+}
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+.card-title {
+    font-weight: 600;
+}
+
+
+/*vision*/
+.hdr {
+    font-size: 25px;
+    color:  #13255E;
+    text-align: center;
+}
+.vision{
+    text-align: center;
+    color:#13255E;
+}
+
+/*footer*/
+.footer-li,ul{
+    list-style: none;
+}
+.footer-bs {
+    background-color:#13255E;
+	padding: 60px 40px;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 20px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+    text-decoration: none;
+}
 
