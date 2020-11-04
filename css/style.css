@@ -1,0 +1,284 @@
+.item{
+    padding-top: 50px;
+}
+
+li ul{
+    display: inline-block;
+    list-style: none;
+}
+a:hover{
+    color: #adadad;
+}
+.menu{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.se{
+    background-color: seashell;
+}
+#hinhnen{
+    width: 100%;
+    height: 100%;
+}
+.hinh{
+    text-align: center;
+    top: 600px;
+}
+.slice{
+    margin-top: -25px;
+    position: relative;
+    height: 650px;
+}
+.slice .fon{
+    position: absolute;
+    top: 280px;
+}
+.fon{
+    left: 550px;
+}
+#p1{
+    font-size: 40px;
+}
+#p2{
+    font-size: 20px;
+}
+#p3{
+    text-align: center;
+    margin-top: 100px;
+}
+#dv{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    color: #FFFFFF;
+}
+.story h3{
+    font-size: 30px;
+}
+#section{
+    width: 400px;
+    height: 350px;
+}
+.sto{
+    background-color: royalblue;
+    height: 400px;
+}
+#img1 #img2 #img3 #img4{
+    height: 100%;
+    width: 100px;
+}
+.c{
+  
+}
+
+.card {
+    cursor: pointer
+}
+
+.hd {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.hdr {
+    font-size: 25px;
+    color: darkblue;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+}
+.cakes{
+    background-image: url(./54120289-handsome-baker-in-uniform-holding-tray-full-of-freshly-baked-croissants-at-the-manufacturing.jpg);
+    height: 600px;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.img {
+    margin-bottom: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222)
+}
+
+.card-title {
+    font-weight: 600
+}
+
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.ft {
+    margin-top: 25px
+}
+
+.chk {
+    margin-bottom: 5px
+}
+.vision{
+    text-align: center;
+    color: midnightblue;
+}
+.bnt:hover{
+    background-color: coral;
+}
+.bnt, .bnt1{
+    background-color: teal;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    margin-left:  500px;
+    text-align: center;
+}
+.rck {
+    margin-top: 20px;
+    padding-bottom: 15px
+}
+#section{
+    height: 300px;
+    width: auto;
+    left: 100px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.footer-bs {
+    background-color: darkblue;
+	padding: 60px 40px;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 20px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+    text-decoration: none;
+}
+
+.icon3{
+    height: 7px;
+    width: 7px;
+}
+#icon{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 120px;
+}
+.db{
+    background-image: url(./backgroun-dich-vu.jpg);
+    height: auto;
+    width: auto;
+    
+}
+.imgdb{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+.navbar{
+    background-color: rgba(82,64,102,0.8);
+}
+.story{
+    height: 400px;
+}
+.rowdb{
+    padding-top: 100px;
+    margin-top: 50px;
+    
+}
+.rowdb1{
+    padding-bottom: 20px;
+}
+h3{
+    color: seashell;
+    font-size: 15px;
+    text-align: center;
+}
+.footer-li,ul{
+    list-style: none;
+}
+/*menu*/
+.prod-menu .row {
+    font-family: 'Montserrat';
+    min-height: 60px;
+    padding-top: 50px;
+}
+
+.prod-banner {
+    background: url(./banner-home.jpg);
+    min-height: 600px;
+    font-family: 'Montserrat';
+
+}
+
+.prod-banner-item,
+.prod-banner-item-logo {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.prod-banner-item:hover {
+    cursor: pointer;
+    border-bottom: white solid 2px;
+}
+
+.prod-banner-item.selected {
+    border-bottom: white solid 2px;
+}
+
+.prod-banner-headline {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prod-banner-title {
+    font-size: 72px;
+}
+.prod-banner-desc {
+    font-size: 36px;
+}
+/*agd*/
+
+    .carousel { 
+    margin-bottom: 0;   
+    padding: 0 40px 30px 40px;
+    }
+     
+    .carousel-control { 
+    left: -12px;    
+    height: 40px;   
+    width: 40px;    
+    background: none repeat scroll 0 0 #222222; 
+    border: 4px solid #FFFFFF;  
+    border-radius: 23px 23px 23px 23px; 
+    margin-top: 90px;
+    }
+     
+    .carousel-control.right {   
+    right: -12px;
+    }
+     
+    .carousel-indicators {  
+    right: 50%; top: auto;  
+    bottom: -10px;  margin-right: -19px;
+    }
+    /* The colour of the indicators */
+    .carousel-indicators li {   
+    background: #cecece;
+    }
+    .carousel-indicators .active {  
+    background: #428bca;
+    }
+
+
+
