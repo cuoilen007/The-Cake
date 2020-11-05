@@ -24,7 +24,7 @@ button:focus {
 }
 
 .prod-banner {
-    background: url("./images/banner-home.jpg") no-repeat fixed top;
+    background: url("./images/source/banner-home.jpg") no-repeat fixed top;
     min-height: 500px;
     font-family: 'Montserrat';
     background-size: contain;
