@@ -405,4 +405,23 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-        }
+    }
+    /*footer*/
+.footer-li,ul{
+    list-style: none;
+    color: white;
+}
+.footer-bs {
+    background-color:#13255E;
+    padding: 60px 40px;
+    color: white; 
+}
+.footer-bs h4{
+    margin-left: 30px
+}
+.footer-bs a, .footer-bs p{
+    color: white;
+    margin-left: -20px;
+    font-size: 15px;   
+}
+      
