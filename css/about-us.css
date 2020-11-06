@@ -79,6 +79,16 @@ h1{
     text-align: center;
 }
 .footer-bs {
+    background-color: darkblue;
+	padding: 60px 40px;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 20px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+    text-decoration: none;
+}
+.footer-bs {
     background-color:#13255E;
     padding: 60px 40px;
     color: white; 
