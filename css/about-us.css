@@ -1,6 +1,7 @@
 /*menu*/
 li ul{
     display: inline-block;
+    list-style:none;	
 }
 .prod-menu .row {
     font-family: 'Montserrat';
