@@ -413,15 +413,50 @@ button:hover {
 }
 .footer-bs {
     background-color:#13255E;
-    padding: 60px 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     color: white; 
+    font-family: 'Montserrat';
 }
 .footer-bs h4{
-    margin-left: 30px
+    margin-left: 20px;
+    line-height: 50px;
+    font-weight: 600;
 }
-.footer-bs a, .footer-bs p{
+.footer-bs a{
     color: white;
     margin-left: -20px;
-    font-size: 15px;   
+    font-size: 14px; 
+    line-height: 50px;  
+}
+.footer-icon span{
+    margin-left: 20px;
+}
+.footer-social h4{
+    margin-left: 0;
+}
+.footer-social li{
+    margin-left: -40px;
+    line-height: 50px;
+}
+.footer-ns h4{
+    margin-left: 0;
+}
+.footer-ns button{
+    background-color: #13255E;
+    border: 1px white solid;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    right: 0px; 
+    padding-left: 30px;  
+    padding-right: 30px;
+}
+.footer-ns button:hover{
+    background-color:  white;
+    color:  #13255E;
+}
+.footer{
+    border-bottom: 1px white solid;
 }
       
