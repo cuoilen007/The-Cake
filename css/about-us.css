@@ -1,8 +1,5 @@
 /*menu*/
-li ul{
-    display: inline-block;
-    list-style:none;	
-}
+
 .prod-menu .row {
     font-family: 'Montserrat';
     min-height: 60px;
@@ -10,51 +7,14 @@ li ul{
 }
 
 .prod-banner {
-    background: url(images/source/banner-home.jpg);
+    background: url(./banner-home.jpg);
     min-height: 600px;
     font-family: 'Montserrat';
 
 }
-
-.prod-banner-item,
-.prod-banner-item-logo {
+li ul{
     display: inline-block;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.prod-banner-item:hover {
-    cursor: pointer;
-    border-bottom: white solid 2px;
-}
-
-.prod-banner-item.selected {
-    border-bottom: white solid 2px;
-}
-
-.prod-banner-headline {
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.prod-banner-title {
-    font-size: 72px;
-}
-.prod-banner-desc {
-    font-size: 36px;
-}
-#icon{
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 120px;
-}
-.sub-heding{
-    text-align: center;
-    height: 200px;
-    margin-top: 50px;
+    list-style: none;
 }
 .b{
     padding-top: 100px;
@@ -72,33 +32,61 @@ li ul{
 p{
     font-size: medium;
 }
-h1{
-    text-align: center;
-}
+
 .heding{
     font-size: 50px;
     text-align: center;
 }
-.footer-bs {
-    background-color: darkblue;
-	padding: 60px 40px;
-	color: rgba(255,255,255,1.00);
-	margin-bottom: 20px;
-	border-bottom-right-radius: 6px;
-	border-top-left-radius: 0px;
-    border-bottom-left-radius: 6px;
-    text-decoration: none;
+/*footer*/
+.footer-li,ul{
+    list-style: none;
+    color: white;
 }
 .footer-bs {
     background-color:#13255E;
-    padding: 60px 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     color: white; 
+    font-family: 'Montserrat';
 }
 .footer-bs h4{
-    margin-left: 30px
+    margin-left: 20px;
+    line-height: 50px;
+    font-weight: 600;
 }
-.footer-bs a, .footer-bs p{
+.footer-bs a{
     color: white;
     margin-left: -20px;
-    font-size: 15px;   
+    font-size: 14px; 
+    line-height: 50px;  
+}
+.footer-icon span{
+    margin-left: 20px;
+}
+.footer-social h4{
+    margin-left: 0;
+}
+.footer-social li{
+    margin-left: -40px;
+    line-height: 50px;
+}
+.footer-ns h4{
+    margin-left: 0;
+}
+.footer-ns button{
+    background-color: #13255E;
+    border: 1px white solid;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    right: 0px; 
+    padding-left: 30px;  
+    padding-right: 30px;
+}
+.footer-ns button:hover{
+    background-color:  white;
+    color:  #13255E;
+}
+.footer{
+    border-bottom: 1px white solid;
 }
