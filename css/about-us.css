@@ -1,17 +1,14 @@
-  
 /*menu*/
-
 .prod-menu .row {
     font-family: 'Montserrat';
     min-height: 60px;
-    padding-top: 50px;
 }
 
 .prod-banner {
-    background: url(./banner-home.jpg);
-    min-height: 600px;
+    background: url("../images/source/banner-home.jpg") no-repeat fixed top;
+    min-height: 500px;
     font-family: 'Montserrat';
-
+    background-size: contain;
 }
 
 .prod-banner-item,
@@ -23,49 +20,76 @@
     text-align: center;
 }
 
-
-
-
-#icon{
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 120px;
+.prod-banner-item:hover {
+    cursor: pointer;
+    border-bottom: white solid 2px;
 }
-.sub-heding{
-    text-align: center;
-    height: 200px;
-    margin-top: 100px;
+
+.prod-banner-item.selected {
+    border-bottom: white solid 2px;
 }
-.b{
-    padding-top: 100px;
-    padding: 50px;
+
+.prod-banner-headline {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prod-banner-title {
+    font-size: 72px;
+}
+
+.prod-banner-desc {
+    font-size: 36px;
+}
+
+.prod-banner-item.selected {
+    border-bottom: white solid 2px;
+}
+
+.prod-banner-headline {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.prod-banner-title {
+    font-size: 72px;
+}
+.prod-banner-desc {
+    font-size: 36px;
+}
+/*body*/
+.heding{
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.sub-heding {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    top: 50%;
 }
 #img1{
     margin: auto;
     width: 100%;
     height: 300px;
 }
-#p1{
-    text-align: center;
-    padding-top: 100px;
+.space{
+    height: 60px;
 }
-#p4{
-    padding-top: 100px;
+.a{
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-p{
-    font-size: medium;
-}
-h1{
-    text-align: center;
-}
-h4{
-    padding-left: 50px;
-}
-.heding{
-    font-size: 50px;
-    text-align: center;
-    
-}
+
+
+
 /*footer*/
 .footer-li,ul{
     list-style: none;
