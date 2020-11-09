@@ -66,6 +66,13 @@
     text-align: center;
     font-family: 'Montserrat';
 }
+.sub-heding-1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    
+}
 .sub-heding {
     text-align: justify;
     margin-top: 20px;
