@@ -12,23 +12,52 @@
 
 <body>
     <div id="prod_banner" class="row prod-banner">
-        <div id="prod_menu" class="container fixed-top prod-menu">
+        <div id="prod_menu" class="fixed-top prod-menu">
             <div class="row align-items-center">
                 <div class="col-sm-1 prod-banner-item"></div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='products/all.html';">Products</div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='event/event.html';">Events</div>
-                <div class="col-sm-2 prod-banner-item-logo" onclick="window.location='index.html';"><img src="images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='about-us.html';">About us</div>
-                <div class="col-sm-2 prod-banner-item">Contact us</div>
-                <div class="col-sm-1 prod-banner-item"></div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='all.html';">Products</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../event/event.html';">Events</div>
+                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../contact.html';">Contact us</div>
+                <div class="col-sm-1">
+                    <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">CART</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body" >
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Product</span>
+                                    <span class="cart-price cart-header cart-column">Price</span>
+                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                                </div>
+                                <div class="cart-items">
+                                </div>                                   
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Sum:</strong>
+                                    <span class="cart-total-price">0$</span>
+                                </div>
+                            </div>                                 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
+                                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container prod-banner-headline">
-            <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
-            </div>
-            <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
+            <div class="container prod-banner-headline">
+                <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
+                </div>
+                <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
+                </div>
             </div>
         </div>
+        
     </div>
 
 <!-- The cake story-->
@@ -38,16 +67,15 @@
            <p id="p3">
               <h3>The Cake Story__________</h3>
               <div id="dv">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                The Cake Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries around. Using only the freshest ingredients we can find, you can be sure that you are served the best quality cake you can ever have.
+We have evolved to become one of a premium distributor and wholesaler for cakes and pastries to some well known resturants, cafes, supermart, hotels and bakery.
+
                <br> <br>
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+               Our online store is a leading online shop in Singapore providing cakes and gifts deliveries within VietNam. We provide competitive prices, good after sales services and on-time delivery.
+The Cake Shop provides same day delivery service seven days a week, including Sunday, within Singapore to provide a high level of customer service.
+Bon Appetite!!
               </div> 
-              <button class="bnt">Read more</button>
+              <a href="about-us.html"><button class="bnt">Read more</button></a>
            </p>
          </div>
          <div class="col-md-6 c">
@@ -57,8 +85,8 @@
         </div>
       </div>
 
-       <!-- Our suggesstion-->
-       <div id="prod_slider" class="container">
+    <!-- Our suggesstion-->
+    <div id="prod_slider" class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3 prod_slider_suggestion">Our Suggestion</div>
         </div>
@@ -67,60 +95,60 @@
                 <div id="carousel-example" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner row w-100 mx-auto" role="listbox">
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                            <img src="images/source/cake1.png" class="img-fluid mx-auto d-block" alt="img1">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/source/cake1.png" class="img-fluid mx-auto d-block" alt="C1">
+                            <div class="prod-item-des">Tropical Summer
+                                                    <br>53$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
-                            
+
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake2.png" class="img-fluid mx-auto d-block" alt="img2">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake3.png" class="img-fluid mx-auto d-block" alt="img3">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/source/cake2.png" class="img-fluid mx-auto d-block" alt="C2">
+                            <div class="prod-item-des">Red Fall
+                                                    <br>55$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake4.png" class="img-fluid mx-auto d-block" alt="img4">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/source/cake3.png" class="img-fluid mx-auto d-block" alt="C3">
+                            <div class="prod-item-des">Mr.Ore0
+                                                    <br>54$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake5.png" class="img-fluid mx-auto d-block" alt="img5">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/source/cake4.png" class="img-fluid mx-auto d-block" alt="C4">
+                            <div class="prod-item-des">A Little You
+                                                    <br>42$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake1.png" class="img-fluid mx-auto d-block" alt="img6">
-                            <div class="prod-item-des">Cake 1
-                                                  <br>28$
-                                                  <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/source/cake5.png" class="img-fluid mx-auto d-block" alt="C5">
+                            <div class="prod-item-des">Miss The Rain
+                                                    <br>38$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake2.png" class="img-fluid mx-auto d-block" alt="img7">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/001.png" class="img-fluid mx-auto d-block" alt="C6">
+                            <div class="prod-item-des">Take My Hand
+                                                  <br>67$
+                                                  <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="images/source/cake3.png" class="img-fluid mx-auto d-block" alt="img8">
-                            <div class="prod-item-des">Cake 1
-                                                    <br>28$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
+                            <img src="../images/002.png" class="img-fluid mx-auto d-block" alt="C7">
+                            <div class="prod-item-des">Simple Love
+                                                    <br>47$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/003.png" class="img-fluid mx-auto d-block" alt="img8">
+                            <div class="prod-item-des">Macaron Love
+                                                    <br>69$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                     </div>
@@ -135,7 +163,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
      <!--Our Service-->
     <div class="row db">
@@ -153,7 +181,7 @@
                     <div class="card-content">
                         <div class="card-body icon"> <img class="imgdb" src="images/source/icon1.png" />
                             <h3>TEA BREAK</h3>
-                            <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h4>
+                            <h4>Take a break with a cup of tea and find a baked good to pair with it.</h4>
                         </div>
                     </div>
                 </div>
@@ -162,7 +190,7 @@
                   <div class="card-content">
                     <div class="card-body icon"> <img class="imgdb" src="images/source/icon2.png" />
                         <h3>BRTHDAY CAKE</h3>
-                        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h4>
+                        <h4>Let's the birthday can't forget</h4>
                     </div>
                 </div>
                 </div>
@@ -172,7 +200,7 @@
                     <div class="card-content">
                         <div class="card-body icon"> <img class="imgdb" src="images/source/icon3.png" />
                             <h3>WEDDING CAKE</h3>
-                            <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h4>
+                            <h4>Always bring the sweetest cake</h4>
                      </div>
                     </div>
                 </div>
@@ -180,7 +208,7 @@
                     <div class="card-content">
                         <div class="card-body icon"> <img class="imgdb" src="images/source/icon4.png" />
                             <h3>DESSERT</h3>
-                            <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h4>
+                            <h4>The tase be saved</h4>
                         </div>
                     </div>
                 </div>
@@ -198,9 +226,9 @@
                 <p class="hdr">Our Vision</p>
             </div>
         </div>
-            <h3 class="vision-des">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+            <h3 class="vision-des">The Cake promises to bring freshly baked products made with quality ingredients to your table every day
                 <br>
-                nibh euismod tincidunt ut laoreet dolore magna ali quam erat volutpat.
+                We will only serve products that we feel confident in feeding our own families.
             </h3>       
     </div>
        
@@ -212,29 +240,29 @@
                 <h4>MENU</h4>
                 <ul class="pages">
                     
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="products/all.html">PRODUCTS</a></li>
+                    <li><a href="event/event.html">EVENT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-nav animated fadeInUp">
                 <h4>SUPPORT</h4>
                 <ul class="list">
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">SEND EMAIL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
                 </ul>
                 <h4>FOLLOW US</h4>
                 <div class="footer-icon">
-                    <span><img src="images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></span>
-                    <span><img src="images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></span>
+                    <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+                    <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
                 </div>
             </div>
             <div class="col-md-3 footer-social animated fadeInUp">
                 <h4>LOCATION</h4>
                 <ul class="list">
-                    <li>606 Ba Thang Hai P.14 Q.10 TP.HCM</li>
+                    <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
                 </ul>
                 <h4>HOTLINE</h4>
                 <ul class="list">
@@ -245,19 +273,19 @@
                 <div class="col-md-4 footer-ns animated fadeInRight">
                   <h4>LET US KNOW</h4>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" required>
                         </div>                     
                         <div class="input-group mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone number">
+                            <input type="tel" class="form-control" placeholder="Phone number" required>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="textarea" col="3" class="form-control" placeholder="Comment">
+                            <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
                             
                         </div>
                         <div class="input-group mb-3">
-                            <button class="btn btn-default" type="button">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                            <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
                         </div>
-                </div><!-- /input-group -->                   
+                </div>             
               </div>
           </div>
       </footer>
