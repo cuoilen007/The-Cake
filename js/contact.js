@@ -120,7 +120,7 @@ function footerSubmit() {
     modal.style.display = "none";
   }
   order.onclick = function () {
-    alert("Cảm ơn bạn đã thanh toán đơn hàng")
+    alert("Thank you! You have paid for the order")
   }
   window.onclick = function (event) {
     if (event.target == modal) {
