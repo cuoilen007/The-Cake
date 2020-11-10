@@ -16,7 +16,7 @@
 </head>
 <body>
   <div id="prod_banner" class="row prod-banner">
-    <div id="prod_menu" class="container fixed-top prod-menu">
+    <div id="prod_menu" class="fixed-top prod-menu">
         <div class="row align-items-center">
             <div class="col-sm-1 prod-banner-item"></div>
             <div class="col-sm-2 prod-banner-item" onclick="window.location='products/all.html';">Products</div>
@@ -93,37 +93,36 @@
   </div>
   <div class="space"></div>
   
- <!--       Footer      -->
- <footer class="footer-bs">
+<!--       Footer      -->
+<footer class="footer-bs">
   <div class="container">
   <div class="row footer">
       <div class="col-md-2 footer-nav animated fadeInUp">
           <h4>MENU</h4>
-          <ul class="pages">
-              
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">PRODUCTS</a></li>
-              <li><a href="#">NEWS</a></li>
-              <li><a href="#">CONTACT</a></li>
+          <ul class="pages">                   
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../about-us.html">ABOUT US</a></li>
+              <li><a href="products/all.html">PRODUCTS</a></li>
+              <li><a href="../event/event.html">EVENT</a></li>
+              <li><a href="../contact.html">CONTACT</a></li>
           </ul>
       </div>
       <div class="col-md-3 footer-nav animated fadeInUp">
           <h4>SUPPORT</h4>
           <ul class="list">
-              <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">SEND EMAIL</a></li>
+              <li><a href="../contact.html">CONTACT US</a></li>
+              <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
           </ul>
           <h4>FOLLOW US</h4>
           <div class="footer-icon">
-              <span><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></span>
-              <span><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></span>
+              <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+              <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
           </div>
       </div>
       <div class="col-md-3 footer-social animated fadeInUp">
           <h4>LOCATION</h4>
           <ul class="list">
-              <li>606 Ba Thang Hai P.14 Q.10 TP.HCM</li>
+              <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
           </ul>
           <h4>HOTLINE</h4>
           <ul class="list">
@@ -134,21 +133,20 @@
           <div class="col-md-4 footer-ns animated fadeInRight">
             <h4>LET US KNOW</h4>
                   <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="email" class="form-control" placeholder="Email" required>
                   </div>                     
                   <div class="input-group mb-3">
-                      <input type="tel" class="form-control" placeholder="Phone number">
+                      <input type="tel" class="form-control" placeholder="Phone number" required>
                   </div>
                   <div class="input-group mb-3">
-                      <input type="textarea" col="3" class="form-control" placeholder="Comment">
+                      <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
                       
                   </div>
                   <div class="input-group mb-3">
-                      <button class="btn btn-default" type="button">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                      <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
                   </div>
           </div>             
         </div>
-
     </div>
 </footer>
 
