@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="shortcut icon" href="ico/favicon.ico" />
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,15 +26,44 @@
             <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='index.html';"><img src="images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
             <div class="col-sm-2 prod-banner-item selected" onclick="window.location='about-us.html';">About us</div>
             <div class="col-sm-2 prod-banner-item">Contact us</div>
-            <div class="col-sm-1 prod-banner-item"></div>
-        </div>
-    </div>
-    <div class="container prod-banner-headline">
-        <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
-        </div>
-        <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
-        </div>
-    </div>
+            <div class="col-sm-1">
+              <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
+              <div id="myModal" class="modal">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">CART</h5>
+                          <span class="close">&times;</span>
+                      </div>
+                      <div class="modal-body" >
+                          <div class="cart-row">
+                              <span class="cart-item cart-header cart-column">Product</span>
+                              <span class="cart-price cart-header cart-column">Price</span>
+                              <span class="cart-quantity cart-header cart-column">Quantity</span>
+                          </div>
+                          <div class="cart-items">
+                          </div>                                   
+                          <div class="cart-total">
+                              <strong class="cart-total-title">Sum:</strong>
+                              <span class="cart-total-price">0$</span>
+                          </div>
+                      </div>                                 
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary close-footer">Continue</button>
+                          <button type="button" class="btn btn-primary order">Pay</button>
+                      </div>
+                  </div>  
+              </div>
+          </div>
+      </div>
+  </div>
+      <div class="container prod-banner-headline">
+          <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
+          </div>
+          <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
+          </div>
+      </div>
+  </div>
+  
 </div>
 
 
