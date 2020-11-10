@@ -4,274 +4,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>All Products</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/product_all.css">
 </head>
+
 <body>
-
-<div id="prod_banner" class="row prod-banner">
-    <div id="prod_menu" class="container fixed-top prod-menu">
-        <div class="row align-items-center">
-            <div class="col-sm-1 prod-banner-item"></div>
-            <div class="col-sm-2 prod-banner-item selected" onclick="window.location='products/all.html';">Products</div>
-            <div class="col-sm-2 prod-banner-item">Events</div>
-            <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
-            <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
-            <div class="col-sm-2 prod-banner-item">Contact us</div>
-            <div class="col-sm-1 prod-banner-item"></div>
-        </div>
-    </div>
-    <div class="container prod-banner-headline">
-        <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
-        </div>
-        <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
-        </div>
-    </div>
-</div>
-
-<div id="prod_slider" class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3 prod_slider_suggestion">Our Suggestion</div>
-    </div>
-    <div class="row">
-        <div class="container-fluid">
-            <div id="carousel-example" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                        <img src="../images/source/cake1.png" class="img-fluid mx-auto d-block" alt="img1">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                        
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/source/cake2.png" class="img-fluid mx-auto d-block" alt="img2">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/source/cake3.png" class="img-fluid mx-auto d-block" alt="img3">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/source/cake4.png" class="img-fluid mx-auto d-block" alt="img4">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/source/cake5.png" class="img-fluid mx-auto d-block" alt="img5">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/001.png" class="img-fluid mx-auto d-block" alt="img6">
-                        <div class="prod-item-des">Cake 1
-                                              <br>28$
-                                              <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/002.png" class="img-fluid mx-auto d-block" alt="img7">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="../images/003.png" class="img-fluid mx-auto d-block" alt="img8">
-                        <div class="prod-item-des">Cake 1
-                                                <br>28$
-                                                <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-                        </div>
+    <div id="prod_banner" class="row prod-banner">
+        <div id="prod_menu" class="fixed-top prod-menu">
+            <div class="row align-items-center">
+                <div class="col-sm-1 prod-banner-item"></div>
+                <div class="col-sm-2 prod-banner-item selected" onclick="window.location='all.html';">Products</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../event/event.html';">Events</div>
+                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../contact.html';">Contact us</div>
+                <div class="col-sm-1">
+                    <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">CART</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body" >
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Product</span>
+                                    <span class="cart-price cart-header cart-column">Price</span>
+                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                                </div>
+                                <div class="cart-items">
+                                </div>                                   
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Sum:</strong>
+                                    <span class="cart-total-price">0$</span>
+                                </div>
+                            </div>                                 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
+                                <button type="button" class="btn btn-primary order">Pay</button>
+                            </div>
+                        </div>  
                     </div>
                 </div>
-                <a class="carousel-control-prev prod-slider-button" href="#carousel-example" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next prod-slider-button" href="#carousel-example" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
+            <div class="container prod-banner-headline">
+                <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
+                </div>
+                <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
+                </div>
+            </div>
+        </div>
+        
     </div>
-</div>
 
-<div id="prod_type" class="container">
-    <div class="d-flex justify-content-around mb-6">
-        <div class="p-2 prod-type-item selected" data-url="all.html">All the cakes</div>
-        <div class="p-2 prod-type-item" data-url="birthday.html">Birthday</div>
-        <div class="p-2 prod-type-item" data-url="anniversary.html">Anniversary</div>
-        <div class="p-2 prod-type-item" data-url="mariage.html">Marriage</div>
-        <div class="p-2 prod-type-item" data-url="engagement.html">Engagement</div>
-        <div class="p-2 prod-type-item" data-url="others.html">Others</div>
-    </div>
-</div>
-
-<div id="prod-items" class="container">
-    <div class="row">
-        <!-- Cake 1 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/028.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/028.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
+    <div id="prod_slider" class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 prod_slider_suggestion">Our Suggestion</div>
         </div>
-        <!-- Cake 2 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/029.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/029.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="container-fluid">
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="../images/source/cake1.png" class="img-fluid mx-auto d-block" alt="C1">
+                            <div class="prod-item-des">Tropical Summer
+                                                    <br>53$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
 
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
-        </div>
-        <!-- Cake 3 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/030.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/030.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/source/cake2.png" class="img-fluid mx-auto d-block" alt="C2">
+                            <div class="prod-item-des">Red Fall
+                                                    <br>55$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/source/cake3.png" class="img-fluid mx-auto d-block" alt="C3">
+                            <div class="prod-item-des">Mr.Ore0
+                                                    <br>54$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/source/cake4.png" class="img-fluid mx-auto d-block" alt="C4">
+                            <div class="prod-item-des">A Little You
+                                                    <br>42$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/source/cake5.png" class="img-fluid mx-auto d-block" alt="C5">
+                            <div class="prod-item-des">Miss The Rain
+                                                    <br>38$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/001.png" class="img-fluid mx-auto d-block" alt="C6">
+                            <div class="prod-item-des">Take My Hand
+                                                  <br>67$
+                                                  <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/002.png" class="img-fluid mx-auto d-block" alt="C7">
+                            <div class="prod-item-des">Simple Love
+                                                    <br>47$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../images/003.png" class="img-fluid mx-auto d-block" alt="img8">
+                            <div class="prod-item-des">Macaron Love
+                                                    <br>69$
+                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                            </div>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev prod-slider-button" href="#carousel-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next prod-slider-button" href="#carousel-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
-        </div>
-        <!-- Cake 4 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/031.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/031.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
             </div>
         </div>
     </div>
-    <div class="row">
-        <!-- Cake 5 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/032.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/032.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
 
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
-        </div>
-        <!-- Cake 6 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/033.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/033.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
-        </div>
-        <!-- Cake 7 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/034.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/034.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
-        </div>
-        <!-- Cake 8 -->
-        <div class="col-sm-3">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
-                <div class="prod-item-img">
-                    <img src="../images/035.png" alt="Cake1" width="200px" height="200px">
-                    <div class="prod-item-desc">
-                        <h2>Egg less</h2>
-                        <a href="../images/035.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="prod-item-name">Cake 1</div>
-                <div class="prod-item-price">100$</div>
-                <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER</button>
-            </div>
+    <div id="prod_type" class="container">
+        <div class="d-flex justify-content-around mb-6">
+            <div class="p-2 prod-type-item selected" data-url="all.html">All the cakes</div>
+            <div class="p-2 prod-type-item" data-url="birthday.html">Birthday</div>
+            <div class="p-2 prod-type-item" data-url="anniversary.html">Anniversary</div>
+            <div class="p-2 prod-type-item" data-url="mariage.html">Marriage</div>
+            <div class="p-2 prod-type-item" data-url="engagement.html">Engagement</div>
+            <div class="p-2 prod-type-item" data-url="others.html">Others</div>
         </div>
     </div>
+
+    <div id="prod-items" class="container">
+
+        <div class="row">
+            <!-- Cake 1 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/028.png" alt="Cake028" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C028<br> 
+                                Size: 10 x 6 inch                             
+                            </h2>
+                            <a href="../images/028.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">Winter Night</div>
+                    <div class="prod-item-price">58$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 2 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/029.png" alt="Cake029" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C029<br> 
+                                Size: 10 x 6 inch <br>                            
+                            </h2>
+                            <a href="../images/029.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">Santa In Your Town</div>
+                    <div class="prod-item-price">59$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 3 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/030.png" alt="Cake030" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C030<br> 
+                                Size:10 x 6 inch <br>                            
+                            </h2>
+                            <a href="../images/030.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">Christmas Night</div>
+                    <div class="prod-item-price">59$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 4 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/031.png" alt="Cake031" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C031<br> 
+                                Size: 10 x 6 inch <br>                            
+                            </h2>
+                            <a href="../images/031.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">Christmas Gift</div>
+                    <div class="prod-item-price">60$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 5 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/032.png" alt="Cake032" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C032<br>                             
+                            </h2>
+                            <a href="../images/032.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">In The Morning</div>
+                    <div class="prod-item-price">3$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 6 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/033.png" alt="Cake033" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C033<br>                            
+                            </h2>
+                            <a href="../images/033.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">A Half Of Coffee</div>
+                    <div class="prod-item-price">4$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 7 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/034.png" alt="Cake034" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C034<br>                          
+                            </h2>
+                            <a href="../images/034.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">Chocolate Bread</div>
+                    <div class="prod-item-price">5$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+            <!-- Cake 8 -->
+            <div class="col-sm-3">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded prod-item">
+                    <div class="prod-item-img">
+                        <img class="img-prd" src="../images/035.png" alt="Cake035" width="200px" height="200px">
+                        <div class="prod-item-desc">
+                            <h2>    
+                                Item code: C035<br> 
+                                Size: 10 x 6 inch <br>                            
+                            </h2>
+                            <a href="../images/035.png" target="_blank"><img src="../images/117453.png" width="32" height="32" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="prod-item-name">UFOs Bread</div>
+                    <div class="prod-item-price">4$</div>
+                    <button type="button" class="btn btn-primary button" onclick=" window.open('order_form.html','_blank')">ORDER NOW</button>
+                    <span class="prod-item-a">|</span> &nbsp; 
+                    <span><img class="icon-add-to-cart btn-cart" src="../images/logo/ICON-ADD-TO-CART-2.png" alt="" ></span>
+                    
+                </div>
+            </div>
+        </div>
 
         <ul class="pagination justify-content-center">
             <li class="page-item">
-              <a class="page-link" href="all.html">Previous</a>
+              <a class="page-link" href="all-3.html#prod-items">Previous</a>
             </li>
-            <li class="page-item"><a class="page-link" href="all.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="all-2.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="all-3.html">3</a></li>
-            <li class="page-item"><a class="page-link active" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="all-5.html">5</a></li>
-            <li class="page-item"><a class="page-link" href="all-6.html">6</a></li>
+            <li class="page-item"><a class="page-link" href="all.html#prod-items">1</a></li>
+            <li class="page-item"><a class="page-link" href="all-2.html#prod-items">2</a></li>
+            <li class="page-item"><a class="page-link" href="all-3.html#prod-items">3</a></li>
+            <li class="page-item"><a class="page-link active" href="all-4.html#prod-items">4</a></li>
+            <li class="page-item"><a class="page-link" href="all-5.html#prod-items">5</a></li>
+            <li class="page-item"><a class="page-link" href="all-6.html#prod-items">6</a></li>
             <li class="page-item">
-              <a class="page-link" href="all-5.html">Next</a>
+              <a class="page-link" href="all-5.html#prod-items">Next</a>
             </li>
-          </ul>
+        </ul>
     </div>
 
-     <!--       Footer      -->
+    <!--Footer-->
     <footer class="footer-bs">
         <div class="container">
         <div class="row footer">
@@ -279,29 +347,29 @@
                 <h4>MENU</h4>
                 <ul class="pages">
                     
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../about-us.html">ABOUT US</a></li>
+                    <li><a href="all.html">PRODUCTS</a></li>
+                    <li><a href="../event/event.html">EVENT</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-nav animated fadeInUp">
                 <h4>SUPPORT</h4>
                 <ul class="list">
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">SEND EMAIL</a></li>
+                    <li><a href="../contact.html">CONTACT US</a></li>
+                    <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
                 </ul>
                 <h4>FOLLOW US</h4>
                 <div class="footer-icon">
-                    <span><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></span>
-                    <span><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></span>
+                    <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+                    <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
                 </div>
             </div>
             <div class="col-md-3 footer-social animated fadeInUp">
                 <h4>LOCATION</h4>
                 <ul class="list">
-                    <li>606 Ba Thang Hai P.14 Q.10 TP.HCM</li>
+                    <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
                 </ul>
                 <h4>HOTLINE</h4>
                 <ul class="list">
@@ -312,23 +380,24 @@
                 <div class="col-md-4 footer-ns animated fadeInRight">
                   <h4>LET US KNOW</h4>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" required>
                         </div>                     
                         <div class="input-group mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone number">
+                            <input type="tel" class="form-control" placeholder="Phone number" required>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="textarea" col="3" class="form-control" placeholder="Comment">
+                            <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
                             
                         </div>
                         <div class="input-group mb-3">
-                            <button class="btn btn-default" type="button">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                            <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
                         </div>
                 </div>             
               </div>
           </div>
       </footer>
-    
+
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/product_all.js"></script>
