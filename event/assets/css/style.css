@@ -7,7 +7,7 @@
     background: url("../../sources/bg1.jpg") no-repeat fixed top;
     min-height: 500px;
     font-family: 'Montserrat';
-    background-size: contain;
+    background-size: cover;
 }
 
 .prod-banner-item,
