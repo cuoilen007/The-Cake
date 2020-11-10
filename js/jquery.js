@@ -61,3 +61,7 @@ $('#carousel-example').on('slide.bs.carousel', function(e) {
         }
     }
 });
+//footer
+function footerSubmit() {
+    alert("Thanks for your comment.");
+  }
