@@ -9,26 +9,52 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="../css/product_all.css">
 </head>
 
 <body>
     <div id="prod_banner" class="row prod-banner">
-        <div id="prod_menu" class="container fixed-top prod-menu">
+        <div id="prod_menu" class="fixed-top prod-menu">
             <div class="row align-items-center">
                 <div class="col-sm-1 prod-banner-item"></div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='products/all.html';">Products</div>
-                <div class="col-sm-2 prod-banner-item selected">Events</div>
-                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='about-us.html';">About us</div>
-                <div class="col-sm-2 prod-banner-item">Contact us</div>
-                <div class="col-sm-1 prod-banner-item"></div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='all.html';">Products</div>
+                <div class="col-sm-2 prod-banner-item selected" onclick="window.location='../event/event.html';">Events</div>
+                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='../contact.html';">Contact us</div>
+                <div class="col-sm-1">
+                    <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">CART</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body" >
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Product</span>
+                                    <span class="cart-price cart-header cart-column">Price</span>
+                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                                </div>
+                                <div class="cart-items">
+                                </div>                                   
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Sum:</strong>
+                                    <span class="cart-total-price">0$</span>
+                                </div>
+                            </div>                                 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
+                                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container prod-banner-headline">
-            <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
+            <div class="row align-items-center justify-content-center prod-banner-title">Events & Promotion
             </div>
-            <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
+            <div class="row align-items-center justify-content-center prod-banner-desc">Something that happens
             </div>
         </div>
     </div>
@@ -37,530 +63,142 @@
             <div class="container">
                 <div class="wrap-text">
                     <div class="text-center">
-                        <h2 class="title"><i class="fa fa-heart" aria-hidden="true"></i> EMPOWERING SMALL SHOPS &
-                            RESTAURANTS SHIPPING NATIONWIDE</h2>
+                        <h2 class="title"><i class="fa fa-heart" aria-hidden="true"></i> It's the most wonderful time of the year</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="spec__card--banner spec__card--bg1 ">
-                <div class="row">
-                    <div class="col-4">
-                        <a class="spec__card--text flex" href="">
-                            THANKSGIVING
-                            DINNER
-                            ESSENTIALS
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <a href="#"><img src="images/Goldbelly-2020-Homepage-Thanksgiving.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+        <div class="banner1">
+            <img src="sources/banner1.jpg" alt="">
+        </div>
+        <div class="container">     
             <div class="wrap-baner-2">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro1.jpg" alt="260x180px">
-                                <h2 class="name-product">Junior's Cheesecake</h2>
-                                <p class="number">Junior's Pumpkin Pie Cheesecake</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$74.95</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp01.jpg" alt="">
+                                <h2 class="name-product">Let's us sweeten your Christmas</h2>
+                                <p class="number">A sweet night with your lover</p>
+                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro2.jpg" alt="260x180px">
-                                <h2 class="name-product">PieCaken Bakeshop</h2>
-                                <p class="number">The PieCaken</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>New York, NY</span>
-                                    </a>
-                                </div>
-                                <div class="price">$99</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp02.jpg" alt="">
+                                <h2 class="name-product">New arrival - The "Puff" menu</h2>
+                                <p class="number">The new menu is comming to town</p>
+                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro3.jpg" alt="260x180px">
-                                <h2 class="name-product">TDuff Goldman Cakes</h2>
-                                <p class="number">Pumpkin Spice Cake</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$69</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp03.jpg" alt="">
+                                <h2 class="name-product">Basic Cource - Bread Lover</h2>
+                                <p class="number">Welcome to us</p>
+                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro4.jpg" alt="260x180px">
-                                <h2 class="name-product">Little Pie Company</h2>
-                                <p class="number">Pumpkin Pie</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$49</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro5.jpg" alt="260x180px">
-                                <h2 class="name-product">The Bagel Nook</h2>
-                                <p class="number">Pumpkin Bagel Dozen</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$59</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro6.jpg" alt="260x180px">
-                                <h2 class="name-product">Michele's Pies</h2>
-                                <p class="number">Maple Pumpkin Pie with Pecan Struesel</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$64</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro7.jpg" alt="260x180px">
-                                <h2 class="name-product">Little Pie Company</h2>
-                                <p class="number">Little Pie Winter Sampler</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$69</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro8.jpg" alt="260x180px">
-                                <h2 class="name-product">The Chocolate Covered Co.</h2>
-                                <p class="number">Halloween Chocolate Covered Crispy Pops - 6 Pack</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$49</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec__card--banner spec__card--bg2 mt-30">
+                </div> 
+                
                 <div class="row">
-                    <div class="col-8">
-                        <a href="#"><img src="images/Black-Food-Makers-Kevin-Bludso-1b.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4">
-                        <a class="spec__card--text flex" href="">
-                            BLACK FOOD
-                            MAKERS
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap-baner-2">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro9.jpg" alt="260x180px">
-                                <h2 class="name-product">H&H Bagels</h2>
-                                <p class="number">Bagels, Cream Cheese & Nova Scotia Salmon - Half Dozen</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$69</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp04.jpg" alt="">
+                                <h2 class="name-product">Jonior Baker Contest</h2>
+                                <p class="number">Let's your children join now!</p>
+                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro10.jpg" alt="260x180px">
-                                <h2 class="name-product">Four & Twenty Blackbirds</h2>
-                                <p class="number">Signature Salted Caramel Apple Pie</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$79</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp05.jpg" alt="">
+                                <h2 class="name-product">The Art of Dessert Workshop</h2>
+                                <p class="number">We always right here waiting for you</p>
+                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro11.jpg" alt="260x180px">
-                                <h2 class="name-product">Junior's Cheesecake</h2>
-                                <p class="number">Junior's Original Cheesecake</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$59.95</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro12.jpg" alt="260x180px">
-                                <h2 class="name-product">Little Pie Company</h2>
-                                <p class="number">Sour Cream Apple Walnut Pie</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$69</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro13.jpg" alt="260x180px">
-                                <h2 class="name-product">Ess-a-Bagel</h2>
-                                <p class="number">New York Bagel Brunch Kit for 6 - BUY 1 GET 6 Bagels + Cookies FREE</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$89.95</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro14.jpg" alt="260x180px">
-                                <h2 class="name-product">Essa Bagel</h2>
-                                <p class="number">Essa Bagel Baker's Dozen (Kosher)</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Totowa, NJ</span>
-                                    </a>
-                                </div>
-                                <div class="price">$59</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro15.jpg" alt="260x180px">
-                                <h2 class="name-product">Russ & Daughters</h2>
-                                <p class="number">New York Brunch</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>New York, NY</span>
-                                    </a>
-                                </div>
-                                <div class="price">$79</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro16.jpg" alt="260x180px">
-                                <h2 class="name-product">Magnolia Bakery</h2>
-                                <p class="number">Confetti Cake</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>New York, NY</span>
-                                    </a>
-                                </div>
-                                <div class="price">$65</div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="wrap-product">  
+                                <img src="sources/camp06.jpg" alt="">
+                                <h2 class="name-product">Discount on Christmas</h2>
+                                <p class="number">Type "LOVETHECAKE" to get 10% discount on your bill</p>
+                                
                         </div>
                     </div>
                 </div>
-            </div>
+
             <div class="spec__card--banner spec__card--bg3 mt-30">
                 <div class="row">
                     <div class="col-4">
-                        <a class="spec__card--text flex" href="">
+                        <span class="spec__card--text flex" href="">
                             TRAVEL WITH YOUR TASTE BUDS:
                             NEXT STOP
                             NEW YORK CITY
-                        </a>
+                        </span>
                     </div>
                     <div class="col-8">
-                        <a href="#"><img src="images/Travel-to-New-York-Feature-Banner-2.jpg" alt=""></a>
+                        <img src="images/Travel-to-New-York-Feature-Banner-2.jpg" alt="">
                     </div>
                 </div>
+            </div>
             </div>
             <div class="wrap-baner-2">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="wrap-product">
-                            <a href="#">
                                 <img src="images/pro17.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Goldbelly 3 Month Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$199</div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wrap-product">                        
+                                <img src="images/pro18.jpg" alt="260x180px">                
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="wrap-product">                     
+                                <img src="images/pro23.jpg" alt="260x180px">            
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro18.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Goldbelly 3 Month Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$399</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro19.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Monthly BBQ Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$89</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro20.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Monthly PIZZA Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$79</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro21.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Monthly BACON Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$59</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro22.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Monthly PIE Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$49</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
-                                <img src="images/pro23.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">MONTHLY Goldbelly Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$45</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                            <a href="#">
                                 <img src="images/pro24.jpg" alt="260x180px">
-                                <h2 class="name-product">Goldbelly Subscriptions</h2>
-                                <p class="number">Goldbelly 12 Month Subscription</p>
-                            </a>
-                            <div class="flex justify-between">
-                                <div class="place">
-                                    <a href="#">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span> Everywhere, USA</span>
-                                    </a>
-                                </div>
-                                <div class="price">$79</div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--       Footer      -->
-     <footer class="footer-bs">
+    </div>    
+    <!--       Footer      -->
+    <footer class="footer-bs">
         <div class="container">
         <div class="row footer">
             <div class="col-md-2 footer-nav animated fadeInUp">
                 <h4>MENU</h4>
                 <ul class="pages">
                     
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../about-us.html">ABOUT US</a></li>
+                    <li><a href="all.html">PRODUCTS</a></li>
+                    <li><a href="../event/event.html">EVENT</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-nav animated fadeInUp">
                 <h4>SUPPORT</h4>
                 <ul class="list">
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">SEND EMAIL</a></li>
+                    <li><a href="../contact.html">CONTACT US</a></li>
+                    <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
                 </ul>
                 <h4>FOLLOW US</h4>
                 <div class="footer-icon">
-                    <span><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></span>
-                    <span><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></span>
+                    <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+                    <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
                 </div>
             </div>
             <div class="col-md-3 footer-social animated fadeInUp">
                 <h4>LOCATION</h4>
                 <ul class="list">
-                    <li>606 Ba Thang Hai P.14 Q.10 TP.HCM</li>
+                    <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
                 </ul>
                 <h4>HOTLINE</h4>
                 <ul class="list">
@@ -571,17 +209,17 @@
                 <div class="col-md-4 footer-ns animated fadeInRight">
                   <h4>LET US KNOW</h4>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" required>
                         </div>                     
                         <div class="input-group mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone number">
+                            <input type="tel" class="form-control" placeholder="Phone number" required>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="textarea" col="3" class="form-control" placeholder="Comment">
+                            <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
                             
                         </div>
                         <div class="input-group mb-3">
-                            <button class="btn btn-default" type="button">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                            <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
                         </div>
                 </div>             
               </div>
@@ -592,9 +230,9 @@
     
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/product_all.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/event.js"></script>
 </body>
 
 </html>
