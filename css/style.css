@@ -13,7 +13,7 @@ button:focus {
 
 .prod-banner {
     background: url("../images/source/banner-home.jpg") no-repeat top;
-    min-height: 700px;
+    min-height: 600px;
     font-family: 'Montserrat';
     background-size: cover;
 }
