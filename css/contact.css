@@ -311,3 +311,62 @@
     text-align: center;
   
   }
+.item{
+    padding-top: 50px;
+}
+
+li ul{
+    display: inline-block;
+    list-style: none;
+}
+a:hover{
+    color: #adadad;
+}
+.menu{
+    margin-top: 30px;
+    margin-bottom: 20px;    
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+#icon{
+    color: floralwhite;
+    text-align: center;
+    font size: 120px;
+}
+.c{
+    padding-left: 60px;
+    font-size: 20px;
+    color: floralwhite;
+}
+body{
+    font-family: 'Montserrat';
+}
+#contact{
+    padding-left: 50px;
+}
+#nen{
+    width: 100%;
+    height: 550px;
+    padding-bottom:30px;
+}
+#us{
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    color: floralwhite;
+    background: crimson;
+    padding-bottom: 50px;
+   
+}
+.story{
+    height: 500px;
+    padding:50px;
+    padding-top: 70px;
+    font-size: 20px;
+    background-image: url(./rice-paper-roll-4973365_960_720.jpg);
+}
+
+
+
