@@ -16,131 +16,136 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-  <div id="prod_banner" class="row prod-banner">
-    <div id="prod_menu" class="fixed-top prod-menu">
-        <div class="row align-items-center">
-            <div class="col-sm-1 prod-banner-item"></div>
-            <div class="col-sm-2 prod-banner-item" onclick="window.location='products/all.html';">Products</div>
-            <div class="col-sm-2 prod-banner-item"onclick="window.location='event/event.html';">Events</div>
-            <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='index.html';"><img src="images/logo/logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
-            <div class="col-sm-2 prod-banner-item" onclick="window.location='about-us.html';">About us</div>
-            <div class="col-sm-2 prod-banner-item selected" onclick="window.location='contact.html';">Contact us</div>
-            <div class="col-sm-1">
-              <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
-              <div id="myModal" class="modal">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title">CART</h5>
-                          <span class="close">&times;</span>
-                      </div>
-                      <div class="modal-body" >
-                          <div class="cart-row">
-                              <span class="cart-item cart-header cart-column">Product</span>
-                              <span class="cart-price cart-header cart-column">Price</span>
-                              <span class="cart-quantity cart-header cart-column">Quantity</span>
-                          </div>
-                          <div class="cart-items">
-                          </div>                                   
-                          <div class="cart-total">
-                              <strong class="cart-total-title">Sum:</strong>
-                              <span class="cart-total-price">0$</span>
-                          </div>
-                      </div>                                 
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary close-footer">Continue</button>
-                          <button type="button" class="btn btn-primary order">Pay</button>
-                      </div>
-                  </div>  
+  
+  <div class="row">
+    <div class="rol-sm-12">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div> 
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <div id="prod_banner" class="row prod-banner">
+              <div id="prod_menu" class="container fixed-top prod-menu">
+                  <div class="row align-items-center">
+                      <div class="col-sm-1 prod-banner-item"></div>
+                      <div class="col-sm-2 prod-banner-item selected">Products</div>
+                      <div class="col-sm-2 prod-banner-item">Events</div>
+                      <div class="col-sm-2 prod-banner-item-logo"><img src="./logo-The-Cake.png" alt="Logo" width="100" height="100"></div>
+                      <div class="col-sm-2 prod-banner-item"><a href="./AboutUS.html" >About us</a></div>
+                      <div class="col-sm-2 prod-banner-item">Contact us</div>
+                      <div class="col-sm-1 prod-banner-item"></div>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-search gly"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                  </ul>
+                  <div id="icon">
+                    <h2 id="dis">Discover Sweet Delicious</h2>
+                    <p id="from">From our heart to your special present</p>
+                </div> 
+              </div>
+            </ul>
+           </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="us">CONTACT US</div>
+       <div class="container-fluid">
+        <div class="story">
+          <div class="row">
+           <div class="col-md-6"> 
+            <iframe id="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5942482424853!2d106.66066801483652!3d10.76572136233494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee75e40e105%3A0xae4825712e323b4c!2zNjA2IMSQxrDhu51uZyAzIFRow6FuZyAyLCBQaMaw4budbmcgMTQsIFF14bqtbiAxMCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1604995746590!5m2!1svi!2s"
+             width="650" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </div>
+           <div class="col-md-6 c">
+            <h2>THE CAKES</h2>
+            <p>_______________________________________</p>
+            <p>Địa chỉ: 606 Đường 3 Tháng 2 Phường 14 Quận 10 Thành Phố HCM</p>
+            <p>Thời gian làm việc:</p>
+            <li>T2-T6: 8:00-17:00</li>
+            <p>Hotline: 09124925291</p>
+            <p>Email: phamvannguyen21511@gmail.com</p>
+           </div>
+           </div>
+          </div>
+       </div>
+
+     </div>
+      <!--       Footer      -->
+    <footer class="footer-bs">
+      <div class="container">
+      <div class="row footer">
+          <div class="col-md-2 footer-nav animated fadeInUp">
+              <h4>MENU</h4>
+              <ul class="pages">
+                  
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">PRODUCTS</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 footer-nav animated fadeInUp">
+              <h4>SUPPORT</h4>
+              <ul class="list">
+                  <li><a href="#">CONTACT US</a></li>
+                  <li><a href="#">SEND EMAIL</a></li>
+              </ul>
+              <h4>FOLLOW US</h4>
+              <div class="footer-icon">
+                  <span><img src="images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></span>
+                  <span><img src="images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></span>
               </div>
           </div>
-      </div>
-  </div>
-      <div class="container prod-banner-headline">
-          <div class="row align-items-center justify-content-center prod-banner-title">Discover Sweet Delicious
+          <div class="col-md-3 footer-social animated fadeInUp">
+              <h4>LOCATION</h4>
+              <ul class="list">
+                  <li>606 Ba Thang Hai P.14 Q.10 TP.HCM</li>
+              </ul>
+              <h4>HOTLINE</h4>
+              <ul class="list">
+                  <li>0931 138 887 - Ms.Anna</li>
+              </ul>
+                
           </div>
-          <div class="row align-items-center justify-content-center prod-banner-desc">From our heart to your special present
-          </div>
-      </div>
-  </div>
-  
-</div>
-
-
-<div class="container"> 
-  <div class="map">
-      <h3>Find Us At</h3>
-      <!--The div element for the map -->
-      <div id="map"></div>
-  </div>
-  <div class="contact-des">
-    Address: 606 Ba Thang Hai W.14 D.10 HCM VietNam<br>
-    Hotline: 0931 138 887 - Ms.Anna <br>
-    Email: thecake@gmail.com <br>
-    Open Time: 8:00 - 23:00 
-  </div>
-</div>
-
-
- <!--       Footer      -->
- <footer class="footer-bs">
-  <div class="container">
-  <div class="row footer">
-      <div class="col-md-2 footer-nav animated fadeInUp">
-          <h4>MENU</h4>
-          <ul class="pages">
-              
-              <li><a href="../index.html">HOME</a></li>
-              <li><a href="../about-us.html">ABOUT US</a></li>
-              <li><a href="all.html">PRODUCTS</a></li>
-              <li><a href="../event/event.html">EVENT</a></li>
-              <li><a href="../contact.html">CONTACT</a></li>
-          </ul>
-      </div>
-      <div class="col-md-3 footer-nav animated fadeInUp">
-          <h4>SUPPORT</h4>
-          <ul class="list">
-              <li><a href="../contact.html">CONTACT US</a></li>
-              <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
-          </ul>
-          <h4>FOLLOW US</h4>
-          <div class="footer-icon">
-              <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
-              <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
-          </div>
-      </div>
-      <div class="col-md-3 footer-social animated fadeInUp">
-          <h4>LOCATION</h4>
-          <ul class="list">
-              <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
-          </ul>
-          <h4>HOTLINE</h4>
-          <ul class="list">
-              <li>0931 138 887 - Ms.Anna</li>
-          </ul>
-            
-      </div>
-          <div class="col-md-4 footer-ns animated fadeInRight">
-            <h4>LET US KNOW</h4>
-                  <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="Email" required>
-                  </div>                     
-                  <div class="input-group mb-3">
-                      <input type="tel" class="form-control" placeholder="Phone number" required>
-                  </div>
-                  <div class="input-group mb-3">
-                      <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
-                      
-                  </div>
-                  <div class="input-group mb-3">
-                      <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
-                  </div>
-          </div>             
+              <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>LET US KNOW</h4>
+                      <div class="input-group mb-3">
+                          <input type="email" class="form-control" placeholder="Email">
+                      </div>                     
+                      <div class="input-group mb-3">
+                          <input type="tel" class="form-control" placeholder="Phone number">
+                      </div>
+                      <div class="input-group mb-3">
+                          <input type="textarea" col="3" class="form-control" placeholder="Comment">
+                          
+                      </div>
+                      <div class="input-group mb-3">
+                          <button class="btn btn-default" type="button">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                      </div>
+              </div><!-- /input-group -->                   
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/contact.js"></script>
+
+  
+
+       
+
+       
+
+       
+<!-- Compiled and minified jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
