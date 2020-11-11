@@ -328,4 +328,8 @@ body{
     font-size: 20px;
     background-image: url("../images/source/rice-paper-roll-4973365_960_720.jpg");
 }
-
+.c{
+  padding-left: 60px;
+  font-size: 20px;
+  color: floralwhite;
+}
