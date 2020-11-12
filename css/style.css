@@ -10,10 +10,9 @@ button:focus {
     font-family: 'Montserrat';
     height: 110px;
 }
-
 .prod-banner {
-    background: url("../images/source/banner-home.jpg") no-repeat top;
-    min-height: 600px;
+    background: #13255E;
+    min-height: 650px;
     font-family: 'Montserrat';
     background-size: cover;
 }
@@ -21,7 +20,7 @@ button:focus {
 .prod-banner-item,
 .prod-banner-item-logo {
     display: inline-block;
-    color: white;
+    color:  white;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -35,7 +34,7 @@ button:focus {
 
 .prod-banner-item:hover {
     cursor: pointer;
-    border-bottom: white solid 2px;
+    border-bottom:  white solid 2px;
 }
 
 .prod-banner-item.selected {
@@ -43,7 +42,7 @@ button:focus {
 }
 
 .prod-banner-headline {
-    color: white;
+    color:   white;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -101,6 +100,9 @@ button:focus {
 }
 
 /*our suggesstion*/
+#prod_slider{
+    padding-bottom: 60px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     /* Show 4th slide on md if col-md-4*/
     .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
@@ -368,7 +370,6 @@ button:focus {
     
 }
 .db{
-    margin-top: 60px;
     background: url(../images/source/backgroun-dich-vu.jpg) no-repeat fixed top;
 }
 .rowdb{
@@ -431,7 +432,7 @@ button:focus {
 .vision{
     text-align: center;
     color:#13255E;
-    background-color: darkgray;
+    background: #d3d3d3;
     height: 280px;
 }
 .vision-des{
@@ -464,7 +465,7 @@ button:focus {
     line-height: 50px;  
 }
 .footer-icon span{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .footer-social h4{
     margin-left: 0;
@@ -604,3 +605,17 @@ button:focus {
     color: #333;
     font-size: 1.1em;
   }
+
+  #myVideo {
+
+    padding-left: 10px;
+    height: 600px; 
+    width: 100%;
+    z-index:0;
+}
+.bannerss1{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top:0px;
+}
