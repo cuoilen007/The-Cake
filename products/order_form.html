@@ -19,39 +19,12 @@
         <div id="prod_menu" class="fixed-top prod-menu">
             <div class="row align-items-center">
                 <div class="col-sm-1 prod-banner-item"></div>
-                <div class="col-sm-2 prod-banner-item" onclick="window.location='all.html';">Products</div>
+                <div class="col-sm-2 prod-banner-item" onclick="window.location='all-1.html';">Products</div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../event/event.html';">Events</div>
                 <div class="col-sm-2 prod-banner-item-logo selected"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../contact.html';">Contact us</div>
-                <div class="col-sm-1">
-                    <i class="fa fa-shopping-basket" id="cart" aria-hidden="true"></i>
-                    <div id="myModal" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">CART</h5>
-                                <span class="close">&times;</span>
-                            </div>
-                            <div class="modal-body" >
-                                <div class="cart-row">
-                                    <span class="cart-item cart-header cart-column">Product</span>
-                                    <span class="cart-price cart-header cart-column">Price</span>
-                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
-                                </div>
-                                <div class="cart-items">
-                                </div>                                   
-                                <div class="cart-total">
-                                    <strong class="cart-total-title">Sum:</strong>
-                                    <span class="cart-total-price">0$</span>
-                                </div>
-                            </div>                                 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
-                                <button type="button" class="btn btn-primary order">Pay</button>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
+                <div class="col-sm-1"></div>
             </div>
         </div>
             <div class="container prod-banner-headline">
@@ -158,7 +131,7 @@
               </div>
               <div class="item"> 
                 <p>Address</p>
-                <input type="email" name="address" required/>
+                <input type="text" name="address" required/>
               </div>
               <div class="item">
                 <p>Contact Number</p>
@@ -252,7 +225,8 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/product_all.js"></script>
+    <script src="../js/order.js"></script>
+
 </body>
 
 </html>
