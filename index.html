@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The cake</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +18,7 @@
                 <div class="col-sm-1 prod-banner-item"></div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='products/all-1.html';">Products</div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='event/event.html';">Events</div>
-                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='index.html';"><img src="images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
+                <div class="col-sm-2 prod-banner-item-logo" onclick="window.location='index.html';"><img src="images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='about-us.html';">About us</div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='contact.html';">Contact us</div>
                 <div class="col-sm-1">
@@ -27,37 +26,45 @@
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">CART</h5>
+                                <h5 class="modal-title">MY CART</h5>
                                 <span class="close">&times;</span>
                             </div>
-                            <div class="modal-body" >
-                                <div class="cart-row">
-                                    <span class="cart-item cart-header cart-column">Product</span>
-                                    <span class="cart-price cart-header cart-column">Price</span>
-                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                            <div class="modal-body">
+                                <div class="cart-header">
+                                    <span class="cart-item cart-column">Cake</span>
+                                    <span class="cart-price cart-column">Price</span>
+                                    <span class="cart-quantity cart-column">Quantity</span>
                                 </div>
                                 <div class="cart-items">
-                                </div>                                   
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="input-group">
+                                    <input id="txtPromotionCode" type="text" class="form-control" placeholder="Promotion Code" aria-label="Promotion Code" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button" onclick="savePromotionCode();">Apply</button>
+                                    </div>
+                                </div>
                                 <div class="cart-total">
-                                    <strong class="cart-total-title">Sum:</strong>
+                                    <span class="cart-total-title">Sum:</span>
                                     <span class="cart-total-price">0$</span>
                                 </div>
-                            </div>                                 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
-                                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                <div>
+                                    <button type="button" class="btn btn-info close-footer">Continue</button>
+                                    <button type="button" class="btn btn-primary order">Pay</button>
+                                </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            
-                <video autoplay muted loop id="myVideo">
+
+        <video autoplay muted loop id="myVideo">
                     <source src="images/source/clip cake.mp4" type="video/mp4">
                 </video>
-                <img class="bannerss1" src="images/source/bg-chu-mau-xanh.png" alt="" height="700px">                   
-        </div>
+        <img class="bannerss1" src="images/source/bg-chu-mau-xanh.png" alt="" height="700px">
+    </div>
 
 
 
@@ -73,58 +80,58 @@
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                             <img src="images/source/cake1.png" class="img-fluid mx-auto d-block" alt="C1">
                             <div class="prod-item-des">Tropical Summer
-                                                    <br>53$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>53$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
 
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/source/cake2.png" class="img-fluid mx-auto d-block" alt="C2">
                             <div class="prod-item-des">Red Fall
-                                                    <br>55$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>55$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/source/cake3.png" class="img-fluid mx-auto d-block" alt="C3">
                             <div class="prod-item-des">Mr.Ore0
-                                                    <br>54$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>54$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/source/cake4.png" class="img-fluid mx-auto d-block" alt="C4">
                             <div class="prod-item-des">A Little You
-                                                    <br>42$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>42$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/source/cake5.png" class="img-fluid mx-auto d-block" alt="C5">
                             <div class="prod-item-des">Miss The Rain
-                                                    <br>38$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>38$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/001.png" class="img-fluid mx-auto d-block" alt="C6">
                             <div class="prod-item-des">Take My Hand
-                                                  <br>67$
-                                                  <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>67$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/002.png" class="img-fluid mx-auto d-block" alt="C7">
                             <div class="prod-item-des">Simple Love
-                                                    <br>47$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>47$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="images/003.png" class="img-fluid mx-auto d-block" alt="img8">
                             <div class="prod-item-des">Macaron Love
-                                                    <br>69$
-                                                    <br> <button type="button" class="btn btn-primary button" onclick=" window.open('products/order_form.html','_blank')">ORDER NOW</button>
+                                <br>69$
+                                <br> <button type="button" class="btn btn-primary button" onclick="window.open('products/order_form.html','_blank')">ORDER NOW</button>
                             </div>
                         </div>
                     </div>
@@ -139,160 +146,158 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 
     <!-- The cake story-->
     <div class="story">
         <div class="row sto">
-         <div class="col-md-6"> 
-           <p id="p3">
-              <h3>The Cake Story__________</h3>
-              <div id="dv">
-                The Cake Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries around. Using only the freshest ingredients we can find, you can be sure that you are served the best quality cake you can ever have.
-We have evolved to become one of a premium distributor and wholesaler for cakes and pastries to some well known resturants, cafes, supermart, hotels and bakery.
+            <div class="col-md-6">
+                <p id="p3">
+                    <h3>The Cake Story__________</h3>
+                    <div id="dv">
+                        The Cake Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries around. Using only the freshest ingredients we can find, you can be sure that you are served the best quality cake
+                        you can ever have. We have evolved to become one of a premium distributor and wholesaler for cakes and pastries to some well known resturants, cafes, supermart, hotels and bakery.
 
-               <br> <br>
-               Our online store is a leading online shop in Singapore providing cakes and gifts deliveries within VietNam. We provide competitive prices, good after sales services and on-time delivery.
-The Cake Shop provides same day delivery service seven days a week, including Sunday, within Singapore to provide a high level of customer service.
-Bon Appetite!!
-              </div> 
-              <a href="about-us.html"><button class="bnt">Read more</button></a>
-           </p>
-         </div>
-         <div class="col-md-6 c">
-           <img id="section" src="images/source/section2.jpg">
-         </div>
-         </div>
+                        <br> <br> Our online store is a leading online shop in Singapore providing cakes and gifts deliveries within VietNam. We provide competitive prices, good after sales services and on-time delivery. The Cake Shop provides same day
+                        delivery service seven days a week, including Sunday, within Singapore to provide a high level of customer service. Bon Appetite!!
+                    </div>
+                    <a href="about-us.html"><button class="bnt">Read more</button></a>
+                </p>
+            </div>
+            <div class="col-md-6 c">
+                <img id="section" src="images/source/section2.jpg">
+            </div>
         </div>
-      </div>
+    </div>
+    </div>
 
-     <!--Our Service-->
+    <!--Our Service-->
     <div class="row db">
         <div class="col-md-4 offset-md-4 hd">
             <p>Our Services</p>
         </div>
         <div class="container">
             <div class="row">
-            <div class="col-xs-6 col col-sm-6">
-                <img src="images/source/dau-bep.png" height="600">
-            </div>
-            <div class="col-xs-6 col col-sm-6 rowdb">
-              <div class="row rowdb1">
-                <div class="col-sm-6">
-                    <div class="card-content">
-                        <div class="card-body icon"> <img class="imgdb" src="images/source/icon1.png" />
-                            <h3>TEA BREAK</h3>
-                            <h4>Take a break with a cup of tea and find a baked good to pair with it.</h4>
+                <div class="col-xs-6 col col-sm-6">
+                    <img src="images/source/dau-bep.png" height="600">
+                </div>
+                <div class="col-xs-6 col col-sm-6 rowdb">
+                    <div class="row rowdb1">
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <div class="card-body icon"> <img class="imgdb" src="images/source/icon1.png" />
+                                    <h3>TEA BREAK</h3>
+                                    <h4>Take a break with a cup of tea and find a baked good to pair with it.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <div class="card-body icon"> <img class="imgdb" src="images/source/icon2.png" />
+                                    <h3>BRTHDAY CAKE</h3>
+                                    <h4>Let's the birthday can't forget</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end row-->
+                    <div class="row rowdb1">
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <div class="card-body icon"> <img class="imgdb" src="images/source/icon3.png" />
+                                    <h3>WEDDING CAKE</h3>
+                                    <h4>Always bring the sweetest cake</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card-content">
+                                <div class="card-body icon"> <img class="imgdb" src="images/source/icon4.png" />
+                                    <h3>DESSERT</h3>
+                                    <h4>The tase be saved</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                  
-                <div class="col-sm-6">
-                  <div class="card-content">
-                    <div class="card-body icon"> <img class="imgdb" src="images/source/icon2.png" />
-                        <h3>BRTHDAY CAKE</h3>
-                        <h4>Let's the birthday can't forget</h4>
-                    </div>
-                </div>
-                </div>
-              </div> <!--end row-->
-              <div class="row rowdb1">
-                <div class="col-sm-6">
-                    <div class="card-content">
-                        <div class="card-body icon"> <img class="imgdb" src="images/source/icon3.png" />
-                            <h3>WEDDING CAKE</h3>
-                            <h4>Always bring the sweetest cake</h4>
-                     </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card-content">
-                        <div class="card-body icon"> <img class="imgdb" src="images/source/icon4.png" />
-                            <h3>DESSERT</h3>
-                            <h4>The tase be saved</h4>
-                        </div>
-                    </div>
-                </div>
             </div>
-          </div>
-          </div>
         </div>
-         
+
     </div>
-                  
-       <!-- Vision-->
+
+    <!-- Vision-->
     <div class="vision">
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <p class="hdr">Our Vision</p>
             </div>
         </div>
-            <h3 class="vision-des">The Cake promises to bring freshly baked products made with quality ingredients to your table every day
-                <br>
-                We will only serve products that we feel confident in feeding our own families.
-            </h3>       
+        <h3 class="vision-des">The Cake promises to bring freshly baked products made with quality ingredients to your table every day
+            <br> We will only serve products that we feel confident in feeding our own families.
+        </h3>
     </div>
-       
+
     <!--       Footer      -->
     <footer class="footer-bs">
         <div class="container">
-        <div class="row footer">
-            <div class="col-md-2 footer-nav animated fadeInUp">
-                <h4>MENU</h4>
-                <ul class="pages">
-                    
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products/all-1.html">PRODUCTS</a></li>
-                    <li><a href="event/event.html">EVENT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-nav animated fadeInUp">
-                <h4>SUPPORT</h4>
-                <ul class="list">
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
-                </ul>
-                <h4>FOLLOW US</h4>
-                <div class="footer-icon">
-                    <span><a href="Facebook.com/thecake" target="_blank" ><img src="images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
-                    <span><a href="instagram.com/thecake" target="_blank" ><img src="images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
+            <div class="row footer">
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h4>MENU</h4>
+                    <ul class="pages">
+
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="products/all-1.html">PRODUCTS</a></li>
+                        <li><a href="event/event.html">EVENT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-nav animated fadeInUp">
+                    <h4>SUPPORT</h4>
+                    <ul class="list">
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
+                    </ul>
+                    <h4>FOLLOW US</h4>
+                    <div class="footer-icon">
+                        <span><a href="Facebook.com/thecake" target="_blank"><img src="images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+                        <span><a href="instagram.com/thecake" target="_blank"><img src="images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-social animated fadeInUp">
+                    <h4>LOCATION</h4>
+                    <ul class="list">
+                        <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
+                    </ul>
+                    <h4>HOTLINE</h4>
+                    <ul class="list">
+                        <li>0931 138 887 - Ms.Anna</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 footer-ns animated fadeInRight">
+                    <h4>LET US KNOW</h4>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone number" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
+
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 footer-social animated fadeInUp">
-                <h4>LOCATION</h4>
-                <ul class="list">
-                    <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
-                </ul>
-                <h4>HOTLINE</h4>
-                <ul class="list">
-                    <li>0931 138 887 - Ms.Anna</li>
-                </ul>
-                  
-            </div>
-                <div class="col-md-4 footer-ns animated fadeInRight">
-                  <h4>LET US KNOW</h4>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
-                        </div>                     
-                        <div class="input-group mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone number" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
-                            
-                        </div>
-                        <div class="input-group mb-3">
-                            <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
-                        </div>
-                </div>             
-              </div>
-          </div>
-      </footer>
-     
-  
-  </div>
+        </div>
+    </footer>
+
+
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
