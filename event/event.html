@@ -19,7 +19,7 @@
                 <div class="col-sm-1 prod-banner-item"></div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../products/all-1.html';">Products</div>
                 <div class="col-sm-2 prod-banner-item selected" onclick="window.location='../event/event.html';">Events</div>
-                <div class="col-sm-2 prod-banner-item-logo"onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
+                <div class="col-sm-2 prod-banner-item-logo" onclick="window.location='../index.html';"><img src="../images/logo/logo-The-Cake.png" alt="Logo" width="90" height="90"></div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../about-us.html';">About us</div>
                 <div class="col-sm-2 prod-banner-item" onclick="window.location='../contact.html';">Contact us</div>
                 <div class="col-sm-1">
@@ -27,27 +27,35 @@
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">CART</h5>
+                                <h5 class="modal-title">MY CART</h5>
                                 <span class="close">&times;</span>
                             </div>
-                            <div class="modal-body" >
-                                <div class="cart-row">
-                                    <span class="cart-item cart-header cart-column">Product</span>
-                                    <span class="cart-price cart-header cart-column">Price</span>
-                                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                            <div class="modal-body">
+                                <div class="cart-header">
+                                    <span class="cart-item cart-column">Cake</span>
+                                    <span class="cart-price cart-column">Price</span>
+                                    <span class="cart-quantity cart-column">Quantity</span>
                                 </div>
                                 <div class="cart-items">
-                                </div>                                   
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="input-group">
+                                    <input id="txtPromotionCode" type="text" class="form-control" placeholder="Promotion Code" aria-label="Promotion Code" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button" onclick="savePromotionCode();">Apply</button>
+                                    </div>
+                                </div>
                                 <div class="cart-total">
-                                    <strong class="cart-total-title">Sum:</strong>
+                                    <span class="cart-total-title">Sum:</span>
                                     <span class="cart-total-price">0$</span>
                                 </div>
-                            </div>                                 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary close-footer">Continue</button>
-                                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                <div>
+                                    <button type="button" class="btn btn-info close-footer">Continue</button>
+                                    <button type="button" class="btn btn-primary order">Pay</button>
+                                </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,74 +67,74 @@
             </div>
         </div>
     </div>
-        </header>
-        <div class="wrap-text-baner">
-            <div class="container">
-                <div class="wrap-text">
-                    <div class="text-center">
-                        <h2 class="title"><i class="fa fa-heart" aria-hidden="true"></i> It's the most wonderful time of the year</h2>
-                    </div>
+    </header>
+    <div class="wrap-text-baner">
+        <div class="container">
+            <div class="wrap-text">
+                <div class="text-center">
+                    <h2 class="title"><i class="fa fa-heart" aria-hidden="true"></i> It's the most wonderful time of the year</h2>
                 </div>
             </div>
         </div>
-        <div class="banner1">
-            <img src="sources/banner1.jpg" alt="">
-        </div>
-        <div class="container">     
-            <div class="wrap-baner-2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp01.jpg" alt="">
-                                <h2 class="name-product">Let's us sweeten your Christmas</h2>
-                                <p class="number">A sweet night with your lover</p>
-                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp02.jpg" alt="">
-                                <h2 class="name-product">New arrival - The "Puff" menu</h2>
-                                <p class="number">The new menu is comming to town</p>
-                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp03.jpg" alt="">
-                                <h2 class="name-product">Basic Cource - Bread Lover</h2>
-                                <p class="number">Welcome to us</p>
-                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp04.jpg" alt="">
-                                <h2 class="name-product">Jonior Baker Contest</h2>
-                                <p class="number">Let's your children join now!</p>
-                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp05.jpg" alt="">
-                                <h2 class="name-product">The Art of Dessert Workshop</h2>
-                                <p class="number">We always right here waiting for you</p>
-                                <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="wrap-product">  
-                                <img src="sources/camp06.jpg" alt="">
-                                <h2 class="name-product">Discount on Christmas</h2>
-                                <p class="number">Type "LOVETHECAKE" to get 20% discount on your bill</p>
-                                
-                        </div>
+    </div>
+    <div class="banner1">
+        <img src="sources/banner1.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="wrap-baner-2">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp01.jpg" alt="">
+                        <h2 class="name-product">Let's us sweeten your Christmas</h2>
+                        <p class="number">A sweet night with your lover</p>
+                        <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp02.jpg" alt="">
+                        <h2 class="name-product">New arrival - The"Puff" menu</h2>
+                        <p class="number">The new menu is comming to town</p>
+                        <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp03.jpg" alt="">
+                        <h2 class="name-product">Basic Cource - Bread Lover</h2>
+                        <p class="number">Welcome to us</p>
+                        <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp04.jpg" alt="">
+                        <h2 class="name-product">Jonior Baker Contest</h2>
+                        <p class="number">Let's your children join now!</p>
+                        <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp05.jpg" alt="">
+                        <h2 class="name-product">The Art of Dessert Workshop</h2>
+                        <p class="number">We always right here waiting for you</p>
+                        <a href="../contact.html"><button class="btn btn-info">Contact us now</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-product">
+                        <img src="sources/camp06.jpg" alt="">
+                        <h2 class="name-product">Discount on Christmas</h2>
+                        <p class="number">Type"LOVETHECAKE" to get 20% discount on your bill</p>
+
+                    </div>
+                </div>
+            </div>
 
             <div class="spec__card--banner spec__card--bg3 mt-30">
                 <div class="row">
@@ -142,93 +150,93 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="wrap-baner-2">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                                <img src="images/pro17.jpg" alt="260x180px">
-                        </div>
+        </div>
+        <div class="wrap-baner-2">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="wrap-product">
+                        <img src="images/pro17.jpg" alt="260x180px">
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">                        
-                                <img src="images/pro18.jpg" alt="260x180px">                
-                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wrap-product">
+                        <img src="images/pro18.jpg" alt="260x180px">
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">                     
-                                <img src="images/pro23.jpg" alt="260x180px">            
-                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wrap-product">
+                        <img src="images/pro23.jpg" alt="260x180px">
                     </div>
-                    <div class="col-md-3">
-                        <div class="wrap-product">
-                                <img src="images/pro24.jpg" alt="260x180px">
-                        </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wrap-product">
+                        <img src="images/pro24.jpg" alt="260x180px">
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    </div>
     <!--       Footer      -->
     <footer class="footer-bs">
         <div class="container">
-        <div class="row footer">
-            <div class="col-md-2 footer-nav animated fadeInUp">
-                <h4>MENU</h4>
-                <ul class="pages">
-                    
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../about-us.html">ABOUT US</a></li>
-                    <li><a href="..//products/all-1.html">PRODUCTS</a></li>
-                    <li><a href="../event/event.html">EVENT</a></li>
-                    <li><a href="../contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 footer-nav animated fadeInUp">
-                <h4>SUPPORT</h4>
-                <ul class="list">
-                    <li><a href="../contact.html">CONTACT US</a></li>
-                    <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
-                </ul>
-                <h4>FOLLOW US</h4>
-                <div class="footer-icon">
-                    <span><a href="Facebook.com/thecake" target="_blank" ><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
-                    <span><a href="instagram.com/thecake" target="_blank" ><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
+            <div class="row footer">
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h4>MENU</h4>
+                    <ul class="pages">
+
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../about-us.html">ABOUT US</a></li>
+                        <li><a href="..//products/all-1.html">PRODUCTS</a></li>
+                        <li><a href="../event/event.html">EVENT</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-nav animated fadeInUp">
+                    <h4>SUPPORT</h4>
+                    <ul class="list">
+                        <li><a href="../contact.html">CONTACT US</a></li>
+                        <li><a href="mailto:thecake@gmail.com">SEND EMAIL</a></li>
+                    </ul>
+                    <h4>FOLLOW US</h4>
+                    <div class="footer-icon">
+                        <span><a href="Facebook.com/thecake" target="_blank"><img src="../images/logo/icon fb.png" alt="Logo FB" height="30px" width="30px"></a></span>
+                        <span><a href="instagram.com/thecake" target="_blank"><img src="../images/logo/icon ins.png" alt="Logo Instagram" height="30px" width="30px"></a></span>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-social animated fadeInUp">
+                    <h4>LOCATION</h4>
+                    <ul class="list">
+                        <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
+                    </ul>
+                    <h4>HOTLINE</h4>
+                    <ul class="list">
+                        <li>0931 138 887 - Ms.Anna</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 footer-ns animated fadeInRight">
+                    <h4>LET US KNOW</h4>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone number" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
+
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 footer-social animated fadeInUp">
-                <h4>LOCATION</h4>
-                <ul class="list">
-                    <li>606 Ba Thang Hai W.14 D.10 HCM VietNam</li>
-                </ul>
-                <h4>HOTLINE</h4>
-                <ul class="list">
-                    <li>0931 138 887 - Ms.Anna</li>
-                </ul>
-                  
-            </div>
-                <div class="col-md-4 footer-ns animated fadeInRight">
-                  <h4>LET US KNOW</h4>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
-                        </div>                     
-                        <div class="input-group mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone number" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="textarea" rows="3" class="form-control" placeholder="Comment" required>
-                            
-                        </div>
-                        <div class="input-group mb-3">
-                            <button class="btn btn-default" type="button" onclick="footerSubmit()">Submit<span class="glyphicon glyphicon-envelope"></span></button>
-                        </div>
-                </div>             
-              </div>
-          </div>
-      </footer>
-                
-          
-    
+        </div>
+    </footer>
+
+
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
