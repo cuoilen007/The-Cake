@@ -8,7 +8,7 @@
     background: url("../images/source/About-Us.jpg") no-repeat fixed;
     min-height: 500px;
     font-family: 'Montserrat';
-    background-size: contain;
+    background-size: cover;
 }
 
 .prod-banner-item,
