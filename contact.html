@@ -87,6 +87,76 @@
                 <p>Hotline: 09124925291</p>
                 <p>Email: thecake@gmail.com</p>
             </div>
+            
+            
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-6">
+                <form action="" class="form-creat">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="form-name">REGISTERFORM</td>
+                        </tr>
+                        <tr>
+                            <td>Login name</td>
+                            <td><input type="text" id="txtLoginname"  required ></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" id="txtPassword" pattern="^.{5,}$"  required ></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password</td>
+                            <td><input type="password" id="txtConfirmPassword" pattern="^.{5,}$" required ></td>
+                        </tr>
+                        <tr>
+                            <td>Full name</td>
+                            <td><input type="text" id="txtFullName" /></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" name="gender"> Male
+                                <input type="radio" name="gender"> Female </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" id="txtEmail"  required  pattern="^\w+@\w+\.\w+$" ></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="tel" id="txtPhoneNumber" pattern="^\d+"/></td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies</td>
+                            <td>
+                                <input type="checkbox">Swimming
+                                <input type="checkbox">Dancing
+                                <input type="checkbox">Shopping
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comment</td>
+                            <td><textarea type="text" id="txtComment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="btnSubmit" onclick="validate()">Submit</button>
+                                <input type="reset" value="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-md-6 c">
+                <img class="img-create" src="images/source/About-Us.jpg" alt="" >
+            </div>
         </div>
     </div>
     </div>
